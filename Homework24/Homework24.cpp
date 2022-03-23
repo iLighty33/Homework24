@@ -68,19 +68,19 @@ int searchInString(string word) {
 	int	questionMark = 0;
 
 	for (int i = 0; i < word.size(); i++) {
-		if (word.find(" "))
+		if (word[i] == ' ')
 			space++;
 		else
-			if (word.find("."))
+			if (word[i] == '.')
 				dot++;
 			else
-				if (word.find(","))
+				if (word[i] == ',')
 					decimalPoint++;
 				else
-					if (word.find("!"))
+					if (word[i] == '!')
 						exclamationPoint++;
 					else
-						if (word.find("?"))
+						if (word[i] == '?')
 							questionMark++;
 
 	}
